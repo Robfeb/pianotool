@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "predeploy": "ng build --base-href /pianotool/ && cp dist/pianotool/browser/index.html dist/pianotool/browser/404.html",
-    "deploy": "npx angular-cli-ghpages --dir=dist/pianotool/browser"
+    "predeploy": "ng build --base-href /pianotool/ && cp docs/browser/index.html docs/browser/404.html",
+    "deploy": "npx angular-cli-ghpages --dir=docs/browser"
   },
   "private": true,
   "packageManager": "npm@10.9.7",
