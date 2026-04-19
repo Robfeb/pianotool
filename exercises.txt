@@ -1,0 +1,228 @@
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Flat Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Flat Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Flat Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Flat Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Sharp Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Sharp Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Sharp Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Do - C Scales/C Sharp Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Fa - F Scales/F Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Fa - F Scales/F Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Fa - F Scales/F Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Fa - F Scales/F Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Fa - F Scales/F Sharp Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Fa - F Scales/F Sharp Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Fa - F Scales/F Sharp Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Fa - F Scales/F Sharp Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Flat Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Flat Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Flat Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Flat Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Sharp Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Sharp Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Sharp Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de La - A Scales/A Sharp Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Mi - E Scales/E Flat Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Mi - E Scales/E Flat Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Mi - E Scales/E Flat Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Mi - E Scales/E Flat Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Mi - E Scales/E Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Mi - E Scales/E Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Mi - E Scales/E Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Mi - E Scales/E Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Flat Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Flat Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Flat Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Flat Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Sharp Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Sharp Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Sharp Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Ré - D Scales/D Sharp Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Si - B Scales/B Flat Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Si - B Scales/B Flat Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Si - B Scales/B Flat Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Si - B Scales/B Flat Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Si - B Scales/B Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Si - B Scales/B Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Si - B Scales/B Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Si - B Scales/B Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Flat Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Flat Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Flat Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Flat Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Sharp Harmonic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Sharp Major.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Sharp Melodic Minor.mid
+public/piano-scales-exercises/Easy piano scales/Gammes de Sol - G Scales/G Sharp Minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_c_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Do - C scales/scale_csharp_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_f_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Fa - F scales/scale_fsharp_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_a_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de La - A scales/scale_asharp_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Mi - E scales/scale_e_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_d_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Ré - D scales/scale_dsharp_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Si - B scales/scale_b_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_g_phrygian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_aeolian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_dorian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_harmonic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_ionian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_locrian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_lydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_major.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_major_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_melodic_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_minor.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_minor_pentatonic.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_mixolydian.mid
+public/piano-scales-exercises/Hard piano scales/Gammes de Sol - G scales/scale_gsharp_phrygian.mid

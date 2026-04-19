@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Dark Theme (Default) */
+  --bg-color: #0a0a0b;
+  --surface-bg: #151518;
+  --panel-bg: #1c1c21;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a5;
+  --border-color: #2a2a30;
+  --accent-color: #f39c12;
+  --accent-hover: #e67e22;
+  
+  --shadow-main: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --border-radius: 12px;
+  
+  --color-rh: #2ecc71;
+  --color-lh: #e91e63;
+  --key-white: #ffffff;
+  --key-black: #1a1a1d;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root.light-mode {
+  /* Light Theme */
+  --bg-color: #f4f4f7;
+  --surface-bg: #ffffff;
+  --panel-bg: #fcfcfd;
+  --text-primary: #1a1a1d;
+  --text-secondary: #606065;
+  --border-color: #e0e0e5;
+  --accent-color: #d35400;
+  --accent-hover: #a04000;
+  
+  --shadow-main: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --key-white: #ffffff;
+  --key-black: #2c2c2e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  /* Reduced base font size */
+  font-size: 14px; 
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
