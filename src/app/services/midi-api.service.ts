@@ -51,7 +51,6 @@ export class MidiApiService {
     if (data.length < 3) return;
 
     const command = data[0] >> 4;
-    const channel = data[0] & 0xf;
     const note = data[1];
     const velocity = data[2];
 
