@@ -33,6 +33,182 @@ export const SOUND_PRESETS: SoundPreset[] = [
 
 type ActiveSynth = Tone.PolySynth | null;
 
+export const SYNTH_CONFIGS: Record<string, { synthType: any, options: any }> = {
+  'grand-piano': {
+    synthType: Tone.Synth,
+    options: {
+      oscillator: { type: 'triangle' },
+      envelope: { attack: 0.005, decay: 0.4, sustain: 0.3, release: 2.5 }
+    }
+  },
+  'electric-piano': {
+    synthType: Tone.FMSynth,
+    options: {
+      harmonicity: 3,
+      modulationIndex: 10,
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.01, decay: 0.2, sustain: 0.4, release: 1.5 },
+      modulation: { type: 'square' },
+      modulationEnvelope: { attack: 0.002, decay: 0.2, sustain: 0.0, release: 0.2 }
+    }
+  },
+  'strings': {
+    synthType: Tone.AMSynth,
+    options: {
+      harmonicity: 2.5,
+      oscillator: { type: 'sawtooth' },
+      envelope: { attack: 0.4, decay: 0.3, sustain: 0.8, release: 2 },
+      modulation: { type: 'sine' },
+      modulationEnvelope: { attack: 0.5, decay: 0.3, sustain: 0.5, release: 1 }
+    }
+  },
+  'brass': {
+    synthType: Tone.Synth,
+    options: {
+      oscillator: { type: 'sawtooth' },
+      envelope: { attack: 0.05, decay: 0.1, sustain: 0.8, release: 0.5 }
+    }
+  },
+  'pure-sine': {
+    synthType: Tone.Synth,
+    options: {
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.005, decay: 0.1, sustain: 0.6, release: 1 }
+    }
+  },
+  'organ': {
+    synthType: Tone.Synth,
+    options: {
+      oscillator: { type: 'square' },
+      envelope: { attack: 0.01, decay: 0.0, sustain: 1.0, release: 0.1 }
+    }
+  },
+  'bell': {
+    synthType: Tone.FMSynth,
+    options: {
+      harmonicity: 8,
+      modulationIndex: 2,
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.001, decay: 1.5, sustain: 0.0, release: 3 },
+      modulation: { type: 'sine' },
+      modulationEnvelope: { attack: 0.001, decay: 0.5, sustain: 0.0, release: 1 }
+    }
+  },
+  'pad': {
+    synthType: Tone.AMSynth,
+    options: {
+      harmonicity: 1.5,
+      oscillator: { type: 'fatsine' as any },
+      envelope: { attack: 0.8, decay: 0.5, sustain: 0.9, release: 3 },
+      modulation: { type: 'sine' },
+      modulationEnvelope: { attack: 0.7, decay: 0.5, sustain: 0.8, release: 2 }
+    }
+  },
+  'wobble': {
+    synthType: Tone.FMSynth,
+    options: {
+      harmonicity: 1.5,
+      modulationIndex: 20,
+      oscillator: { type: 'sawtooth' },
+      envelope: { attack: 0.01, decay: 0.2, sustain: 0.7, release: 0.8 },
+      modulation: { type: 'sine' },
+      modulationEnvelope: { attack: 0.01, decay: 0.1, sustain: 0.5, release: 0.5 }
+    }
+  },
+  'drumset': {
+    synthType: Tone.FMSynth,
+    options: {
+      harmonicity: 0.5,
+      modulationIndex: 10,
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.001, decay: 0.2, sustain: 0.05, release: 0.1 },
+      modulation: { type: 'square' },
+      modulationEnvelope: { attack: 0.001, decay: 0.1, sustain: 0.0, release: 0.1 }
+    }
+  },
+  'hangpad': {
+    synthType: Tone.FMSynth,
+    options: {
+      harmonicity: 2.5,
+      modulationIndex: 5,
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.02, decay: 0.5, sustain: 0.1, release: 2 },
+      modulation: { type: 'sine' }
+    }
+  },
+  'winds': {
+    synthType: Tone.FMSynth,
+    options: {
+      harmonicity: 1.0,
+      modulationIndex: 3,
+      oscillator: { type: 'triangle' },
+      envelope: { attack: 0.1, decay: 0.2, sustain: 0.7, release: 0.5 },
+      modulation: { type: 'sawtooth' }
+    }
+  },
+  'flute': {
+    synthType: Tone.Synth,
+    options: {
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.15, decay: 0.1, sustain: 0.8, release: 0.5 }
+    }
+  },
+  'cello': {
+    synthType: Tone.AMSynth,
+    options: {
+      harmonicity: 1.01,
+      oscillator: { type: 'sawtooth' },
+      envelope: { attack: 0.2, decay: 0.3, sustain: 0.9, release: 1 },
+      modulation: { type: 'sine' }
+    }
+  },
+  'harpsichord': {
+    synthType: Tone.Synth,
+    options: {
+      oscillator: { type: 'square' },
+      envelope: { attack: 0.001, decay: 0.1, sustain: 0.1, release: 0.1 }
+    }
+  },
+  'dream-pad': {
+    synthType: Tone.AMSynth,
+    options: {
+      harmonicity: 3.01,
+      oscillator: { type: 'sine' },
+      envelope: { attack: 1.5, decay: 0.5, sustain: 0.9, release: 5 },
+      modulation: { type: 'sawtooth' }
+    }
+  },
+  'overdrive': {
+    synthType: Tone.FMSynth,
+    options: {
+      harmonicity: 1.0,
+      modulationIndex: 50,
+      oscillator: { type: 'sawtooth' },
+      envelope: { attack: 0.01, decay: 0.2, sustain: 1.0, release: 0.5 },
+      modulation: { type: 'sawtooth' }
+    }
+  },
+  'oboe': {
+    synthType: Tone.FMSynth,
+    options: {
+      harmonicity: 2.0,
+      modulationIndex: 10,
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.1, decay: 0.2, sustain: 0.6, release: 0.3 },
+      modulation: { type: 'square' }
+    }
+  },
+  'accordion': {
+    synthType: Tone.AMSynth,
+    options: {
+      harmonicity: 1.5,
+      oscillator: { type: 'sawtooth' },
+      envelope: { attack: 0.1, decay: 0.1, sustain: 1.0, release: 0.1 },
+      modulation: { type: 'triangle' }
+    }
+  }
+};
+
 @Injectable({
   providedIn: 'root'
 })
@@ -70,187 +246,8 @@ export class AudioService {
       return;
     }
 
-    switch (id) {
-      case 'grand-piano':
-        this.synth = new Tone.PolySynth(Tone.Synth, {
-          oscillator: { type: 'triangle' },
-          envelope: { attack: 0.005, decay: 0.4, sustain: 0.3, release: 2.5 }
-        }).toDestination();
-        break;
-
-      case 'electric-piano':
-        this.synth = new Tone.PolySynth(Tone.FMSynth, {
-          harmonicity: 3,
-          modulationIndex: 10,
-          oscillator: { type: 'sine' },
-          envelope: { attack: 0.01, decay: 0.2, sustain: 0.4, release: 1.5 },
-          modulation: { type: 'square' },
-          modulationEnvelope: { attack: 0.002, decay: 0.2, sustain: 0.0, release: 0.2 }
-        }).toDestination();
-        break;
-
-      case 'strings':
-        this.synth = new Tone.PolySynth(Tone.AMSynth, {
-          harmonicity: 2.5,
-          oscillator: { type: 'sawtooth' },
-          envelope: { attack: 0.4, decay: 0.3, sustain: 0.8, release: 2 },
-          modulation: { type: 'sine' },
-          modulationEnvelope: { attack: 0.5, decay: 0.3, sustain: 0.5, release: 1 }
-        }).toDestination();
-        break;
-
-      case 'brass':
-        this.synth = new Tone.PolySynth(Tone.Synth, {
-          oscillator: { type: 'sawtooth' },
-          envelope: { attack: 0.05, decay: 0.1, sustain: 0.8, release: 0.5 }
-        }).toDestination();
-        break;
-
-      case 'pure-sine':
-        this.synth = new Tone.PolySynth(Tone.Synth, {
-          oscillator: { type: 'sine' },
-          envelope: { attack: 0.005, decay: 0.1, sustain: 0.6, release: 1 }
-        }).toDestination();
-        break;
-
-      case 'organ':
-        this.synth = new Tone.PolySynth(Tone.Synth, {
-          oscillator: { type: 'square' },
-          envelope: { attack: 0.01, decay: 0.0, sustain: 1.0, release: 0.1 }
-        }).toDestination();
-        break;
-
-      case 'bell':
-        this.synth = new Tone.PolySynth(Tone.FMSynth, {
-          harmonicity: 8,
-          modulationIndex: 2,
-          oscillator: { type: 'sine' },
-          envelope: { attack: 0.001, decay: 1.5, sustain: 0.0, release: 3 },
-          modulation: { type: 'sine' },
-          modulationEnvelope: { attack: 0.001, decay: 0.5, sustain: 0.0, release: 1 }
-        }).toDestination();
-        break;
-
-      case 'pad':
-        this.synth = new Tone.PolySynth(Tone.AMSynth, {
-          harmonicity: 1.5,
-          oscillator: { type: 'fatsine' as any },
-          envelope: { attack: 0.8, decay: 0.5, sustain: 0.9, release: 3 },
-          modulation: { type: 'sine' },
-          modulationEnvelope: { attack: 0.7, decay: 0.5, sustain: 0.8, release: 2 }
-        }).toDestination();
-        break;
-
-      case 'wobble':
-        this.synth = new Tone.PolySynth(Tone.FMSynth, {
-          harmonicity: 1.5,
-          modulationIndex: 20,
-          oscillator: { type: 'sawtooth' },
-          envelope: { attack: 0.01, decay: 0.2, sustain: 0.7, release: 0.8 },
-          modulation: { type: 'sine' },
-          modulationEnvelope: { attack: 0.01, decay: 0.1, sustain: 0.5, release: 0.5 }
-        }).toDestination();
-        break;
-
-      // New 10 Sounds Logic
-      case 'drumset':
-        this.synth = new Tone.PolySynth(Tone.FMSynth, {
-          harmonicity: 0.5,
-          modulationIndex: 10,
-          oscillator: { type: 'sine' },
-          envelope: { attack: 0.001, decay: 0.2, sustain: 0.05, release: 0.1 },
-          modulation: { type: 'square' },
-          modulationEnvelope: { attack: 0.001, decay: 0.1, sustain: 0.0, release: 0.1 }
-        }).toDestination();
-        break;
-
-      case 'hangpad':
-        this.synth = new Tone.PolySynth(Tone.FMSynth, {
-          harmonicity: 2.5,
-          modulationIndex: 5,
-          oscillator: { type: 'sine' },
-          envelope: { attack: 0.02, decay: 0.5, sustain: 0.1, release: 2 },
-          modulation: { type: 'sine' }
-        }).toDestination();
-        break;
-
-      case 'winds':
-        this.synth = new Tone.PolySynth(Tone.FMSynth, {
-          harmonicity: 1.0,
-          modulationIndex: 3,
-          oscillator: { type: 'triangle' },
-          envelope: { attack: 0.1, decay: 0.2, sustain: 0.7, release: 0.5 },
-          modulation: { type: 'sawtooth' }
-        }).toDestination();
-        break;
-
-      case 'flute':
-        this.synth = new Tone.PolySynth(Tone.Synth, {
-          oscillator: { type: 'sine' },
-          envelope: { attack: 0.15, decay: 0.1, sustain: 0.8, release: 0.5 }
-        }).toDestination();
-        break;
-
-      case 'cello':
-        this.synth = new Tone.PolySynth(Tone.AMSynth, {
-          harmonicity: 1.01,
-          oscillator: { type: 'sawtooth' },
-          envelope: { attack: 0.2, decay: 0.3, sustain: 0.9, release: 1 },
-          modulation: { type: 'sine' }
-        }).toDestination();
-        break;
-
-      case 'harpsichord':
-        this.synth = new Tone.PolySynth(Tone.Synth, {
-          oscillator: { type: 'square' },
-          envelope: { attack: 0.001, decay: 0.1, sustain: 0.1, release: 0.1 }
-        }).toDestination();
-        break;
-
-      case 'dream-pad':
-        this.synth = new Tone.PolySynth(Tone.AMSynth, {
-          harmonicity: 3.01,
-          oscillator: { type: 'sine' },
-          envelope: { attack: 1.5, decay: 0.5, sustain: 0.9, release: 5 },
-          modulation: { type: 'sawtooth' }
-        }).toDestination();
-        break;
-
-      case 'overdrive':
-        this.synth = new Tone.PolySynth(Tone.FMSynth, {
-          harmonicity: 1.0,
-          modulationIndex: 50,
-          oscillator: { type: 'sawtooth' },
-          envelope: { attack: 0.01, decay: 0.2, sustain: 1.0, release: 0.5 },
-          modulation: { type: 'sawtooth' }
-        }).toDestination();
-        break;
-
-      case 'oboe':
-        this.synth = new Tone.PolySynth(Tone.FMSynth, {
-          harmonicity: 2.0,
-          modulationIndex: 10,
-          oscillator: { type: 'sine' },
-          envelope: { attack: 0.1, decay: 0.2, sustain: 0.6, release: 0.3 },
-          modulation: { type: 'square' }
-        }).toDestination();
-        break;
-
-      case 'accordion':
-        this.synth = new Tone.PolySynth(Tone.AMSynth, {
-          harmonicity: 1.5,
-          oscillator: { type: 'sawtooth' },
-          envelope: { attack: 0.1, decay: 0.1, sustain: 1.0, release: 0.1 },
-          modulation: { type: 'triangle' }
-        }).toDestination();
-        break;
-
-      default:
-        this.synth = new Tone.PolySynth(Tone.Synth, {
-          oscillator: { type: 'triangle' },
-          envelope: { attack: 0.005, decay: 0.4, sustain: 0.3, release: 2.5 }
-        }).toDestination();
-    }
+    const config = SYNTH_CONFIGS[id] || SYNTH_CONFIGS['grand-piano'];
+    this.synth = new Tone.PolySynth(config.synthType, config.options).toDestination();
 
     if (this.synth) {
       this.synth.volume.value = -6;
