@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, effect } from '@angular/core';
+import { Component, inject, OnInit, effect, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KeyboardComponent } from './components/keyboard/keyboard.component';
 import { TheoryComponent } from './components/theory/theory.component';
@@ -25,33 +25,43 @@ import { HostListener } from '@angular/core';
       </div>
       
       <div class="header-right">
-        <div class="controls-group">
-          <button class="toggle-btn" [class.active]="theory.showTheorySection()" (click)="toggleTheory()">
-            {{ theory.language() === 'es' ? 'Teoría' : 'Theory' }}
-          </button>
-          <button class="toggle-btn" [class.active]="theory.showMidiSection()" (click)="toggleMidi()">
-            MIDI
-          </button>
-          <button class="toggle-btn" [class.active]="theory.showMetronomeSection()" (click)="toggleMetronome()">
-            {{ theory.language() === 'es' ? 'Metrónomo' : 'Metronome' }}
-          </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle-btn" (click)="showMobileMenu.set(!showMobileMenu())">
+          {{ showMobileMenu() ? (theory.language() === 'es' ? 'Ocultar Opciones' : 'Hide Options') : (theory.language() === 'es' ? 'Mostrar Opciones' : 'Show Options') }}
+          <span class="chevron" [class.open]="showMobileMenu()">▼</span>
+        </button>
+
+        <div class="controls-container" [class.mobile-open]="showMobileMenu()">
+          <div class="controls-group">
+            <button class="toggle-btn" [class.active]="theory.showTheorySection()" (click)="toggleTheory()">
+              {{ theory.language() === 'es' ? 'Teoría' : 'Theory' }}
+            </button>
+            <button class="toggle-btn" [class.active]="theory.showMidiSection()" (click)="toggleMidi()">
+              MIDI
+            </button>
+            <button class="toggle-btn" [class.active]="theory.showMetronomeSection()" (click)="toggleMetronome()">
+              {{ theory.language() === 'es' ? 'Metrónomo' : 'Metronome' }}
+            </button>
+          </div>
+
+          <div class="icon-btns-group">
+            <button class="icon-btn theme-toggle" (click)="theory.toggleTheme()" [title]="theory.language() === 'es' ? 'Cambiar Tema' : 'Toggle Theme'">
+              @if (theory.theme() === 'dark') {
+                🌙
+              } @else {
+                ☀️
+              }
+            </button>
+
+            <button class="icon-btn lang-toggle" (click)="theory.toggleLanguage()">
+              {{ theory.language() === 'en' ? '🇺🇸' : '🇪🇸' }}
+            </button>
+
+            <button class="icon-btn help-toggle" [class.active]="theory.showHelpSection()" (click)="toggleHelp()" [title]="theory.language() === 'es' ? 'Ayuda' : 'Help'">
+              ❓
+            </button>
+          </div>
         </div>
-
-        <button class="icon-btn theme-toggle" (click)="theory.toggleTheme()" [title]="theory.language() === 'es' ? 'Cambiar Tema' : 'Toggle Theme'">
-          @if (theory.theme() === 'dark') {
-            🌙
-          } @else {
-            ☀️
-          }
-        </button>
-
-        <button class="icon-btn lang-toggle" (click)="theory.toggleLanguage()">
-          {{ theory.language() === 'en' ? '🇺🇸' : '🇪🇸' }}
-        </button>
-
-        <button class="icon-btn help-toggle" [class.active]="theory.showHelpSection()" (click)="toggleHelp()" [title]="theory.language() === 'es' ? 'Ayuda' : 'Help'">
-          ❓
-        </button>
       </div>
     </header>
 
@@ -79,6 +89,10 @@ import { HostListener } from '@angular/core';
       z-index: 10;
       border-bottom: 1px solid var(--border-color);
     }
+
+    .menu-toggle-btn { display: none; }
+    .controls-container { display: flex; align-items: center; gap: 20px; }
+    .icon-btns-group { display: flex; align-items: center; gap: 15px; }
     
     h1 { font-size: 1.2rem; margin: 0; }
 
@@ -188,27 +202,68 @@ import { HostListener } from '@angular/core';
 
     @media (max-width: 768px) {
       .app-header {
-        flex-direction: column;
-        padding: 15px;
-        align-items: flex-start;
-        gap: 15px;
-      }
-      .header-right {
-        width: 100%;
-        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 12px 20px;
         gap: 10px;
       }
+      
+      .header-left { width: auto; }
+      .header-right { width: auto; }
+
+      .menu-toggle-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--accent-color);
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      
+      .chevron {
+        font-size: 0.7rem;
+        transition: transform 0.3s;
+      }
+      .chevron.open { transform: rotate(180deg); }
+
+      .controls-container {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+        border-top: 1px solid var(--border-color);
+        margin-top: 10px;
+      }
+
+      .controls-container.mobile-open {
+        display: flex;
+        animation: slideDown 0.3s ease-out;
+      }
+
+      @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
       .controls-group {
-        flex: 1;
-        overflow-x: auto;
-        white-space: nowrap;
-        padding: 2px;
-        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        justify-content: space-between;
       }
-      .toggle-btn {
-        padding: 5px 8px;
-        font-size: 0.75rem;
+
+      .icon-btns-group {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
       }
+
       .dashboard {
         padding: 10px;
         gap: 10px;
@@ -221,6 +276,7 @@ export class App implements OnInit {
   midiApi = inject(MidiApiService);
   theory = inject(TheoryService);
   metronome = inject(MetronomeService);
+  showMobileMenu = signal(false);
 
   @HostListener('window:keydown', ['$event'])
   onKeyDown(event: KeyboardEvent) {
@@ -244,6 +300,15 @@ export class App implements OnInit {
 
   ngOnInit() {
     this.midiApi.requestAccess();
+
+    // Check for first-time tutorial
+    const tutorialShown = localStorage.getItem('piano_tool_tutorial_shown');
+    if (!tutorialShown) {
+      setTimeout(() => {
+        this.theory.showHelpSection.set(true);
+        localStorage.setItem('piano_tool_tutorial_shown', 'true');
+      }, 1000);
+    }
   }
 
   toggleTheory() {

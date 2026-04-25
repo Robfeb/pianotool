@@ -23,69 +23,77 @@ const BLACK_KEY_BINDINGS = ['w', 'e', 't', 'y', 'u', 'o', 'p'];
   imports: [CommonModule],
   template: `
     <div class="keyboard-container">
-      <!-- Controls Row 1: Size, Language, Note Toggles -->
-      <div class="controls">
-        <div class="ctrl-group">
-          <label>{{ theory.language() === 'es' ? 'Teclado:' : 'Keyboard:' }}</label>
-          <select (change)="changeSize($event)">
-            <option value="88" [selected]="keyboardSize() === 88">88 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
-            <option value="76" [selected]="keyboardSize() === 76">76 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
-            <option value="61" [selected]="keyboardSize() === 61">61 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
-            <option value="49" [selected]="keyboardSize() === 49">49 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
-            <option value="25" [selected]="keyboardSize() === 25">25 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
-          </select>
-        </div>
+      <!-- Mobile Keyboard Options Toggle -->
+      <button class="kb-options-toggle" (click)="showKeyboardOptions.set(!showKeyboardOptions())">
+        {{ showKeyboardOptions() ? (theory.language() === 'es' ? 'Ocultar Opciones' : 'Hide Options') : (theory.language() === 'es' ? 'Opciones de Teclado' : 'Keyboard Options') }}
+        <span class="chevron" [class.open]="showKeyboardOptions()">▼</span>
+      </button>
 
-        <div class="ctrl-group">
-          <label>{{ theory.language() === 'es' ? 'Idioma:' : 'Language:' }}</label>
-          <button class="lang-btn" (click)="toggleLanguage()">
-            {{ theory.language() === 'en' ? '🇬🇧 EN' : '🇪🇸 ES' }}
-          </button>
-        </div>
+      <div class="kb-controls-wrapper" [class.mobile-open]="showKeyboardOptions()">
+        <!-- Controls Row 1: Size, Language, Note Toggles -->
+        <div class="controls">
+          <div class="ctrl-group">
+            <label>{{ theory.language() === 'es' ? 'Teclado:' : 'Keyboard:' }}</label>
+            <select (change)="changeSize($event)">
+              <option value="88" [selected]="keyboardSize() === 88">88 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
+              <option value="76" [selected]="keyboardSize() === 76">76 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
+              <option value="61" [selected]="keyboardSize() === 61">61 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
+              <option value="49" [selected]="keyboardSize() === 49">49 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
+              <option value="25" [selected]="keyboardSize() === 25">25 {{ theory.language() === 'es' ? 'teclas' : 'keys' }}</option>
+            </select>
+          </div>
 
-        <div class="ctrl-group">
-          <label>
-            <input type="checkbox" [checked]="showNotes()" (change)="toggleNotes()" />
-            {{ theory.language() === 'es' ? 'Mostrar Notas' : 'Show Notes' }}
-          </label>
-        </div>
+          <div class="ctrl-group">
+            <label>{{ theory.language() === 'es' ? 'Idioma:' : 'Language:' }}</label>
+            <button class="lang-btn" (click)="toggleLanguage()">
+              {{ theory.language() === 'en' ? '🇬🇧 EN' : '🇪🇸 ES' }}
+            </button>
+          </div>
 
-        @if (showNotes()) {
           <div class="ctrl-group">
             <label>
-              <input type="checkbox" [checked]="colorizeNotes()" (change)="toggleColorize()" />
-              {{ theory.language() === 'es' ? 'Colorear Notas' : 'Colorize Notes' }}
+              <input type="checkbox" [checked]="showNotes()" (change)="toggleNotes()" />
+              {{ theory.language() === 'es' ? 'Mostrar Notas' : 'Show Notes' }}
             </label>
           </div>
-        }
 
-        <div class="ctrl-group">
-          <label>{{ theory.language() === 'es' ? 'Sonido:' : 'Sound:' }}</label>
-          <select (change)="changeSound($event)">
-            @for (p of soundPresets; track p.id) {
-              <option [value]="p.id" [selected]="audio.selectedPreset() === p.id">
-                {{ theory.language() === 'es' ? p.labelEs : p.label }}
-              </option>
-            }
-          </select>
-        </div>
-      </div>
+          @if (showNotes()) {
+            <div class="ctrl-group">
+              <label>
+                <input type="checkbox" [checked]="colorizeNotes()" (change)="toggleColorize()" />
+                {{ theory.language() === 'es' ? 'Colorear Notas' : 'Colorize Notes' }}
+              </label>
+            </div>
+          }
 
-      <!-- Controls Row 2: PC keyboard range selector -->
-      <div class="controls controls-secondary">
-        <div class="ctrl-group">
-          <label>{{ theory.language() === 'es' ? 'Asignación teclado PC — Octava inicio:' : 'PC Keyboard mapping — Start octave:' }}</label>
-          <select (change)="changePcOctave($event)">
-            @for (oct of octaveOptions; track oct) {
-              <option [value]="oct" [selected]="pcOctave() === oct">C{{ oct }}</option>
-            }
-          </select>
+          <div class="ctrl-group">
+            <label>{{ theory.language() === 'es' ? 'Sonido:' : 'Sound:' }}</label>
+            <select (change)="changeSound($event)">
+              @for (p of soundPresets; track p.id) {
+                <option [value]="p.id" [selected]="audio.selectedPreset() === p.id">
+                  {{ theory.language() === 'es' ? p.labelEs : p.label }}
+                </option>
+              }
+            </select>
+          </div>
         </div>
-        <div class="key-legend">
-          <span class="legend-white">⬜ {{ theory.language() === 'es' ? 'Blancas' : 'White' }}: A S D F G H J K L Ñ</span>
-          <span class="legend-black">⬛ {{ theory.language() === 'es' ? 'Negras' : 'Black' }}: W E T Y U O P</span>
-          <span class="legend-ctrl">⌨️ Z/X: {{ theory.language() === 'es' ? 'Octava' : 'Octave' }}</span>
-          <span class="legend-ctrl">🎶 C/V: {{ theory.language() === 'es' ? 'Sonido' : 'Sound' }}</span>
+
+        <!-- Controls Row 2: PC keyboard range selector -->
+        <div class="controls controls-secondary">
+          <div class="ctrl-group">
+            <label>{{ theory.language() === 'es' ? 'Asignación teclado PC — Octava inicio:' : 'PC Keyboard mapping — Start octave:' }}</label>
+            <select (change)="changePcOctave($event)">
+              @for (oct of octaveOptions; track oct) {
+                <option [value]="oct" [selected]="pcOctave() === oct">C{{ oct }}</option>
+              }
+            </select>
+          </div>
+          <div class="key-legend">
+            <span class="legend-white">⬜ {{ theory.language() === 'es' ? 'Blancas' : 'White' }}: A S D F G H J K L Ñ</span>
+            <span class="legend-black">⬛ {{ theory.language() === 'es' ? 'Negras' : 'Black' }}: W E T Y U O P</span>
+            <span class="legend-ctrl">⌨️ Z/X: {{ theory.language() === 'es' ? 'Octava' : 'Octave' }}</span>
+            <span class="legend-ctrl">🎶 C/V: {{ theory.language() === 'es' ? 'Sonido' : 'Sound' }}</span>
+          </div>
         </div>
       </div>
 
@@ -124,9 +132,10 @@ const BLACK_KEY_BINDINGS = ['w', 'e', 't', 'y', 'u', 'o', 'p'];
                   [attr.stroke-width]="hasPcBinding(key.midi) ? '2' : '1'"
                   [attr.filter]="hasPcBinding(key.midi) ? 'url(#key-glow)' : null"
                   rx="3"
-                  (mousedown)="playNote(key.midi)"
-                  (mouseup)="releaseNote(key.midi)"
-                  (mouseleave)="releaseNote(key.midi)"
+                  (pointerdown)="playNote(key.midi)"
+                  (pointerup)="releaseNote(key.midi)"
+                  (pointerleave)="releaseNote(key.midi)"
+                  (pointerenter)="onPointerEnter($event, key.midi)"
                 />
                 @if (showNotes()) {
                   <text
@@ -170,9 +179,10 @@ const BLACK_KEY_BINDINGS = ['w', 'e', 't', 'y', 'u', 'o', 'p'];
                   [attr.stroke-width]="hasPcBinding(key.midi) ? '2' : '0'"
                   [attr.filter]="hasPcBinding(key.midi) ? 'url(#key-glow)' : null"
                   rx="3"
-                  (mousedown)="playNote(key.midi)"
-                  (mouseup)="releaseNote(key.midi)"
-                  (mouseleave)="releaseNote(key.midi)"
+                  (pointerdown)="playNote(key.midi)"
+                  (pointerup)="releaseNote(key.midi)"
+                  (pointerleave)="releaseNote(key.midi)"
+                  (pointerenter)="onPointerEnter($event, key.midi)"
                 />
                 @if (showNotes()) {
                   <text
@@ -290,10 +300,53 @@ const BLACK_KEY_BINDINGS = ['w', 'e', 't', 'y', 'u', 'o', 'p'];
       border: 1px solid var(--border-color);
       border-radius: 4px;
       user-select: none;
+      touch-action: none;
     }
     rect {
       cursor: pointer;
       transition: fill 0.08s;
+    }
+
+    .kb-options-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--surface-bg);
+      color: var(--accent-color);
+      border: 1px solid var(--border-color);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .kb-options-toggle .chevron {
+      font-size: 0.7rem;
+      transition: transform 0.3s;
+    }
+    .kb-options-toggle .chevron.open { transform: rotate(180deg); }
+
+    @media (max-width: 768px) {
+      .kb-options-toggle { display: flex; }
+      
+      .kb-controls-wrapper {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        animation: slideDown 0.3s ease-out;
+      }
+      .kb-controls-wrapper.mobile-open { display: flex; }
+
+      .controls { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .key-legend { flex-direction: column; gap: 4px; }
+      
+      @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
     }
   `]
 })
@@ -342,6 +395,7 @@ export class KeyboardComponent implements OnDestroy {
   showNotes     = signal<boolean>(this.loadPref('showNotes',    false));
   colorizeNotes = signal<boolean>(this.loadPref('colorizeNotes', false));
   pcOctave      = signal<number>(this.loadPref('pcOctave',      3));
+  showKeyboardOptions = signal<boolean>(false);
 
   // Keys currently pressed locally (mouse or PC keyboard) — midiNumber
   localNotes = signal<Set<number>>(new Set());
@@ -500,7 +554,15 @@ export class KeyboardComponent implements OnDestroy {
     }
   }
 
-  // ─── Mouse Handlers ───────────────────────────────────────────────
+  // ─── Pointer Handlers ───────────────────────────────────────────────
+  onPointerEnter(event: PointerEvent, midi: number) {
+    // If the pointer is down (any button), play the note (glissando)
+    if (event.buttons > 0) {
+      this.playNote(midi);
+    }
+  }
+
+  // ─── Mouse/Touch Handlers ───────────────────────────────────────────────
   playNote(midi: number) {
     this.audio.playNote(midi);
     this.midiPlayer.onUserNotePress(midi);

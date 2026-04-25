@@ -60,6 +60,13 @@ import { TheoryService } from '../../services/theory.service';
             <li><strong>🌙 / ☀️:</strong> {{ theory.language() === 'es' ? 'Cambia entre modo oscuro y claro.' : 'Switch between Dark and Light themes.' }}</li>
           </ul>
         </section>
+
+        <!-- Close Button for Tutorial feel -->
+        <section class="close-section">
+          <button class="got-it-btn" (click)="theory.showHelpSection.set(false)">
+            {{ theory.language() === 'es' ? '¡Entendido!' : 'Got it!' }}
+          </button>
+        </section>
       </div>
     </div>
   `,
@@ -135,6 +142,35 @@ import { TheoryService } from '../../services/theory.service';
       .help-content {
         grid-template-columns: 1fr;
       }
+    }
+
+    .close-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent !important;
+      border: none !important;
+      grid-column: 1 / -1;
+    }
+
+    .got-it-btn {
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.2s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .got-it-btn:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+    .got-it-btn:active {
+      transform: scale(0.95);
     }
   `]
 })
