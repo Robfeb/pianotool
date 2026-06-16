@@ -304,7 +304,6 @@ export class AudioService {
     if (this.synth) {
       try {
         const note = Tone.Frequency(midiNumber, 'midi').toNote();
-        // console.log(`MIDI Playback: ${note} @ ${time}`);
         this.synth.triggerAttackRelease(note, duration, time, velocity);
       } catch { /* ignore */ }
     }
