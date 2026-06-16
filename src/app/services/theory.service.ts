@@ -124,7 +124,15 @@ export class TheoryService {
 
   private loadPref<T>(key: string, defaultValue: T): T {
     const stored = localStorage.getItem(`piano_tool_${key}`);
-    return stored ? JSON.parse(stored) : defaultValue;
+    if (stored) {
+      try {
+        return JSON.parse(stored);
+      } catch (e) {
+        console.error(`Error parsing localStorage key piano_tool_${key}:`, e);
+        return defaultValue;
+      }
+    }
+    return defaultValue;
   }
 
   readonly progressions = [
