@@ -255,7 +255,17 @@ export class MidiPlayerComponent {
 
   practiceProgress = signal(0);
 
+  private exerciseNameMap = new Map<string, string>();
+
   constructor() {
+    for (const cat of this.exerciseKeys) {
+      for (const sub of Object.keys(this.exercises[cat])) {
+        for (const ex of this.exercises[cat][sub]) {
+          this.exerciseNameMap.set(ex.path, `${cat} - ${sub} - ${ex.name}`);
+        }
+      }
+    }
+
     effect(() => {
       const steps = this.midiPlayer.practiceSteps();
       if (steps.length > 0) {
@@ -348,17 +358,7 @@ export class MidiPlayerComponent {
     const path = (event.target as HTMLSelectElement).value;
     if (!path) return;
     
-    // Find exercise name from index
-    let friendlyName = 'Exercise';
-    for (const cat of this.exerciseKeys) {
-      for (const sub of this.getSubKeys(cat)) {
-        const found = this.exercises[cat][sub].find(e => e.path === path);
-        if (found) {
-          friendlyName = `${cat} - ${sub} - ${found.name}`;
-          break;
-        }
-      }
-    }
+    const friendlyName = this.exerciseNameMap.get(path) || 'Exercise';
     this.midiPlayer.loadMidiFromUrl(path, friendlyName);
   }
 }
