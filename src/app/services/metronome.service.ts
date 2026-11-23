@@ -95,6 +95,14 @@ export class MetronomeService {
 
   private loadPref<T>(key: string, defaultValue: T): T {
     const stored = localStorage.getItem(`metronome_${key}`);
-    return stored ? JSON.parse(stored) : defaultValue;
+    if (stored) {
+      try {
+        return JSON.parse(stored);
+      } catch (e) {
+        console.warn(`Failed to parse localStorage key metronome_${key}:`, e);
+        return defaultValue;
+      }
+    }
+    return defaultValue;
   }
 }
